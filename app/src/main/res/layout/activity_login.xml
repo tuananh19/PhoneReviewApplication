@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient">
+
+        <ImageView
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:src="@drawable/smartphone_logo" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginRight="@dimen/_25sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/etUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_edittext"
+                    android:gravity="center"
+                    android:hint="Username"
+                    android:imeOptions="flagForceAscii"
+                    android:inputType="textPassword|textVisiblePassword"
+                    android:maxLength="10"
+                    android:padding="@dimen/_8sdp" />
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/border_edittext"
+                    android:gravity="center"
+                    android:hint="Password"
+                    android:imeOptions="flagForceAscii"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:padding="@dimen/_8sdp" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="@dimen/_160sdp"
+                android:layout_height="@dimen/_27sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:background="@color/bgBottomNavigation"
+                android:onClick="setLogin"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="@dimen/_12sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="80dp"
+            android:layout_above="@id/linearLayout"
+            android:id="@+id/linear"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@id/linearLayout2"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/tvForgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ForgotPassword"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_9sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  |  "
+                android:textColor="#000000"
+                android:textSize="@dimen/_9sdp" />
+
+            <TextView
+                android:id="@+id/tvHelp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/txtForgotPassword"
+                android:text="Help"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_9sdp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="6dp"
+            android:text="Register Here." />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignStart="@+id/imageView"
+            android:layout_alignLeft="@+id/imageView"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/twitter" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                app:srcCompat="@drawable/instagram" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                app:srcCompat="@drawable/facebook" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>
